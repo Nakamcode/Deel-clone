@@ -116,11 +116,27 @@ header:hover .btn-nav_request {
   background-color: var(--green-color);
   color: var(--white-color);
 }
-.auto-slider {
+.auto-wrapper {
   width: 100%;
-  display: flex;
-  overflow-y: scroll;
-  gap: 0.5rem;
+  position: relative;
+  /* background-color: red; */
+  overflow: hidden;
+}
+.auto-slider {
+  position: absolute;
+  top: 50%;
+  width: 200%;
+  left: 0;
+  transform: translate(0%, -50%);
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
 }
 #global {
   background-color: rgba(255, 237, 158, 0.65);
