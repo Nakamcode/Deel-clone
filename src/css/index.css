@@ -155,6 +155,19 @@ h5 ~ p {
   color: var(--heading-2);
 }
 
+#payrol-plaform {
+  background-color: #ebf5ff;
+  padding: 10rem 0 !important;
+}
+.mt-cs {
+  margin-top: 7rem;
+}
+li {
+  padding-bottom: 1rem;
+}
+.ul-fs {
+  font-size: 1.4rem;
+}
 /* media query */
 @media (max-width: 770px) {
   h1 {
